@@ -1,0 +1,62 @@
+<!DOCTYPE html.5>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <script src="app.js" defer></script>
+    <header class="cabecalho">
+        <nav>
+            <img class="cabecalho__logo" src="./assets/logo.png" alt="Logo da Alura.">
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__esquerdo">
+            <h1 class="main__esquerdo__titulo">Digite seu texto:</h1>
+            <textarea name="Digite seu texto:" id="main__esquerdo__texto">
+            </textarea>
+            <div class="main__esquerdo__botoes">
+                <button onclick="criptografar()" class="main__esquerdo__botoes__criptografar">Criptografar</button>
+                <button onclick="descriptografar()"
+                    class="main__esquerdo__botoes__descriptografar">Descriptografar</button>
+            </div>
+            <div class="main__esquerdo__aviso">
+                <img class="main__esquerdo__exclamacao" src="./assets/exclamacao.webp" alt="Ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+        </section>
+
+        <section id="area" class="main__direito">
+            <div id="principal" class="block">
+                <img class="main__direito__imagem" src="./assets/lupa.svg" alt="Pessoa segurando uma lupa.">
+                <div class="main__direito__texto">
+                    <h2 id="h2" class="main__direito__texto__h2">Nenhuma mensagem encontrada</h2>
+                    <br>
+                    <p class="main__direito__texto__p">Digite um texto que você deseja criptografar ou descriptografar.
+                    </p>
+                </div>
+            </div>
+            <div id="texto" class="desativado">
+                <div class="main__direito__ativado">
+                    <p id="p" class="main__direito__paragrafo"></p>
+                    <button onclick="copiar()" id="copiar" class="main__direito__copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <h3>T7 ONE ©️ Yasmin Machado</h3>
+    </footer>
+
+</body>
+
+</html>
